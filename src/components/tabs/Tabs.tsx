@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import HomeScreen from './HomeScreen';
-import SettingsScreen from './SettingsScreen';
+import HomeScreen from '../../screens/HomeScreen';
+import SettingsScreen from '../../screens/SettingsScreen';
 import TabBar from './TabBar';
-import GeneralScreen from './GeneralScreen';
+import GeneralScreen from '../../screens/GeneralScreen';
 
 export default function Tabs() {
   const [selectedTab, setSelectedTab] = useState<'home' | 'settings' | 'general'>('home');
