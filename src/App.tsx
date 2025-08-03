@@ -2,9 +2,10 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
 import { ThemeProvider } from './contexts/ThemeContext';
-import ThemeToggle from './components/themeToggle';
+
 import RootLayout from './RootLayout';
 import Tabs from './components/tabs/Tabs';
+import ThemeToggle from './components/themeToggle';
 
 
 export default function App() {

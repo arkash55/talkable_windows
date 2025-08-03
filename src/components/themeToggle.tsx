@@ -2,6 +2,7 @@ import React from 'react';
 import { Pressable, Text, StyleSheet } from 'react-native';
 import { useTheme } from '../contexts/ThemeContext';
 
+
 export default function ThemeToggle() {
   const { mode, setMode } = useTheme();
 

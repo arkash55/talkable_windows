@@ -1,3 +1,9 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",           // enables absolute imports
+    "paths": {
+      "@/*": ["src/*"]        // alias @ to /src
+    }
+  }
 }
