@@ -8,7 +8,7 @@ const rnwPath = fs.realpathSync(
 );
 
 // Resolve the path to your /src folder
-const srcPath = path.resolve(__dirname, 'src');
+const srcPath = path.resolve(__dirname);
 
 /**
  * Metro configuration
