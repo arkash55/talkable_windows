@@ -1,19 +1,21 @@
 // App.tsx
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaView } from 'react-native';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { AuthProvider } from './contexts/AuthContext';
-import AppRouter from './routers/appRouter';
+import ThemeToggle from './components/themeToggle';
+import RootLayout from './RootLayout';
+import Tabs from './components/tabs/Tabs';
 
 
 export default function App() {
   return (
     <ThemeProvider>
-      <AuthProvider>
-        <NavigationContainer>
-          <AppRouter />
-        </NavigationContainer>
-      </AuthProvider>
+      <SafeAreaView style={{ flex: 1 }}>
+        <RootLayout>
+          <ThemeToggle />
+          <Tabs />
+        </RootLayout>
+      </SafeAreaView>
     </ThemeProvider>
   );
 }
