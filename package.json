@@ -17,6 +17,7 @@
     "formik": "^2.2.9",
     "react": "19.0.0",
     "react-native": "0.79.0",
+    "react-native-dotenv": "^3.4.11",
     "react-native-gesture-handler": "^2.27.2",
     "react-native-reanimated": "^4.0.1",
     "react-native-safe-area-context": "^5.5.2",
