@@ -1,5 +1,5 @@
 // layout/RootLayout.tsx
-import { useTheme } from './contexts/ThemeContext'; 
+import { useTheme } from '../contexts/ThemeContext'; 
 
 import React from 'react';
 import { View, StyleSheet } from 'react-native';

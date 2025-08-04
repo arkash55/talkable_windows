@@ -7,7 +7,7 @@ import Tabs from '../components/tabs/Tabs';
 import ThemeToggle from '../components/themeToggle';
 import { useAuth } from '../contexts/AuthContext';
 import AuthNavigator from '../navigator/authNavigator';
-import RootLayout from '../RootLayout';
+import RootLayout from '../layouts/RootLayout';
 
 export default function AppRouter() {
   const { user, loading } = useAuth();
@@ -23,9 +23,9 @@ export default function AppRouter() {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
+      <ThemeToggle />
       {user ? (
         <RootLayout>
-          <ThemeToggle />
           <Tabs />
         </RootLayout>
       ) : (
